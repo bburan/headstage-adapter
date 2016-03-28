@@ -362,7 +362,7 @@ F 1 "CONN_01X02" H 7602 1372 50  0000 L CNN
 F 2 "Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_2pol" H 7525 1425 50  0001 C CNN
 F 3 "" H 7525 1425 50  0000 C CNN
 	1    7525 1425
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L Jumper_NO_Small JP1
@@ -373,10 +373,66 @@ F 1 "Jumper_NO_Small" H 7535 1015 50  0001 C CNN
 F 2 "Socket_Strips:Socket_Strip_Straight_1x02" H 7525 1075 50  0001 C CNN
 F 3 "" H 7525 1075 50  0000 C CNN
 	1    7525 1075
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Text Label 7425 1075 2    60   ~ 0
 G
 Text Label 7625 1075 0    60   ~ 0
 R
+$Comp
+L CerePlex_M96 U3
+U 1 1 56F9BD25
+P 8950 3900
+F 0 "U3" H 8950 5953 60  0000 C CNN
+F 1 "CerePlex_M96" H 8950 5847 60  0000 C CNN
+F 2 "headstage adapter:omnetics_connector_36_pin" H 8950 3900 60  0001 C CNN
+F 3 "" H 8950 3900 60  0000 C CNN
+	1    8950 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 2100 8600 3925
+Wire Wire Line
+	9300 3925 9300 2100
+Connection ~ 8600 2200
+Connection ~ 8600 2300
+Connection ~ 8600 2400
+Connection ~ 8600 2500
+Connection ~ 8600 2600
+Connection ~ 8600 2700
+Connection ~ 8600 2800
+Connection ~ 8600 2900
+Connection ~ 8600 3000
+Connection ~ 8600 3100
+Connection ~ 8600 3200
+Connection ~ 8600 3300
+Connection ~ 8600 3400
+Connection ~ 8600 3500
+Connection ~ 8600 3600
+Connection ~ 8600 3700
+Connection ~ 8600 3800
+Connection ~ 9300 3800
+Connection ~ 9300 3700
+Connection ~ 9300 3600
+Connection ~ 9300 3500
+Connection ~ 9300 3400
+Connection ~ 9300 3300
+Connection ~ 9300 3200
+Connection ~ 9300 2200
+Connection ~ 9300 2300
+Connection ~ 9300 2400
+Connection ~ 9300 2500
+Connection ~ 9300 2600
+Connection ~ 9300 2700
+Connection ~ 9300 2800
+Connection ~ 9300 2900
+Connection ~ 9300 3000
+Connection ~ 9300 3100
+Wire Wire Line
+	8600 3925 9300 3925
+Wire Wire Line
+	8950 3925 8950 4000
+Connection ~ 8950 3925
+Text Label 8950 4000 3    60   ~ 0
+G
 $EndSCHEMATC
