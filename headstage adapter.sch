@@ -364,4 +364,19 @@ F 3 "" H 7525 1425 50  0000 C CNN
 	1    7525 1425
 	1    0    0    -1  
 $EndComp
+$Comp
+L Jumper_NO_Small JP1
+U 1 1 56F9B9A8
+P 7525 1075
+F 0 "JP1" H 7525 1168 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 7535 1015 50  0001 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x02" H 7525 1075 50  0001 C CNN
+F 3 "" H 7525 1075 50  0000 C CNN
+	1    7525 1075
+	1    0    0    -1  
+$EndComp
+Text Label 7425 1075 2    60   ~ 0
+G
+Text Label 7625 1075 0    60   ~ 0
+R
 $EndSCHEMATC

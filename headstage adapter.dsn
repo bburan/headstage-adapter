@@ -33,17 +33,26 @@
       )
     )
     (boundary
-      (path pcb 0  115000 -65000  110000 -65000  110000 -135000  175000 -135000
-            175000 -65000  115000 -65000  115000 -65000)
+      (rect pcb 128250 -68060 158250 -119556)
     )
-    (plane /R (polygon In1.Cu 0  133000 -117000  153500 -117000  153500 -94750  133000 -94750))
-    (plane /G (polygon B.Cu 0  133000 -117000  153500 -117000  153500 -94750  133000 -94750))
-    (via "Via[0-3]_625:305_um")
+    (plane /R (polygon In1.Cu 0  158250 -84750  158250 -103250  153750 -107750  153750 -109500
+            153750 -109700  146400 -117000  140950 -117000  133400 -110050
+            133400 -107650  128250 -102500  128250 -85250  141500 -72000
+            145500 -72000  158250 -84750))
+    (plane /G (polygon B.Cu 0  158250 -84750  158250 -103250  153750 -107750  153750 -109500
+            153750 -109700  146400 -117000  140950 -117000  133400 -110050
+            133400 -107650  128250 -102500  128250 -85250  141190 -68060
+            145190 -68060  158250 -84750))
+    (keepout "" (polygon F.Cu 0  139340 -97000  139970 -97000  139970 -108340  139310 -108340
+            139310 -108320))
+    (keepout "" (polygon F.Cu 0  147340 -97010  147960 -97010  147960 -108360  147240 -108360
+            147240 -108340))
+    (via "Via[0-3]_470:305_um")
     (rule
-      (width 130)
-      (clearance 160.1)
-      (clearance 160.1 (type default_smd))
-      (clearance 40 (type smd_smd))
+      (width 80)
+      (clearance 80.1)
+      (clearance 80.1 (type default_smd))
+      (clearance 20 (type smd_smd))
     )
   )
   (placement
@@ -54,8 +63,8 @@
       (place P2 142400 -114100 front 0 (PN CONN_01X02))
     )
     (component "headstage adapter:omnetics_connector_36_pin"
-      (place U1 155400 -102400 front 90 (PN CerePlex_M96))
-      (place U2 138300 -102400 front 90 (PN CerePlex_M96))
+      (place U1 150850 -102400 front 90 (PN CerePlex_M96))
+      (place U2 142950 -102400 front 90 (PN CerePlex_M96))
     )
   )
   (library
@@ -202,11 +211,11 @@
       (shape (rect B.Cu -999.49 -999.49 999.49 999.49))
       (attach off)
     )
-    (padstack "Via[0-3]_625:305_um"
-      (shape (circle F.Cu 625))
-      (shape (circle In1.Cu 625))
-      (shape (circle In2.Cu 625))
-      (shape (circle B.Cu 625))
+    (padstack "Via[0-3]_470:305_um"
+      (shape (circle F.Cu 470))
+      (shape (circle In1.Cu 470))
+      (shape (circle In2.Cu 470))
+      (shape (circle B.Cu 470))
       (attach off)
     )
   )
@@ -414,14 +423,30 @@
       /37 /38 /39 /4 /40 /41 /42 /43 /44 /45 /46 /47 /48 /49 /5 /50 /51 /52
       /53 /54 /55 /56 /57 /58 /59 /6 /60 /61 /62 /63 /64 /7 /8 /9 /G /R
       (circuit
-        (use_via Via[0-3]_625:305_um)
+        (use_via Via[0-3]_470:305_um)
       )
       (rule
-        (width 130)
-        (clearance 160.1)
+        (width 80)
+        (clearance 80.1)
       )
     )
   )
   (wiring
+    (wire (path F.Cu 80  140410 -108160  140410 -108670)(net /R)(type protect))
+    (wire (path F.Cu 80  148310 -108160  148310 -108670)(net /R)(type protect))
+    (wire (path F.Cu 80  147040 -97280  147040 -96770)(net /R)(type protect))
+    (wire (path F.Cu 80  139140 -97280  139140 -96770)(net /R)(type protect))
+    (wire (path F.Cu 80  139140 -108160  139140 -108670)(net /G)(type protect))
+    (wire (path F.Cu 80  147040 -108160  147040 -108670)(net /G)(type protect))
+    (wire (path F.Cu 80  148310 -97280  148310 -96770)(net /G)(type protect))
+    (wire (path F.Cu 80  140410 -97280  140410 -96770)(net /G)(type protect))
+    (via "Via[0-3]_470:305_um"  140410 -108670 (net /R)(type protect))
+    (via "Via[0-3]_470:305_um"  148310 -108670 (net /R)(type protect))
+    (via "Via[0-3]_470:305_um"  147040 -96770 (net /R)(type protect))
+    (via "Via[0-3]_470:305_um"  139140 -96770 (net /R)(type protect))
+    (via "Via[0-3]_470:305_um"  139140 -108670 (net /G)(type protect))
+    (via "Via[0-3]_470:305_um"  147040 -108670 (net /G)(type protect))
+    (via "Via[0-3]_470:305_um"  148310 -96770 (net /G)(type protect))
+    (via "Via[0-3]_470:305_um"  140410 -96770 (net /G)(type protect))
   )
 )
