@@ -49,7 +49,7 @@ L CerePlex_M96 U1
 U 1 1 56F96C58
 P 6825 3900
 F 0 "U1" H 6825 5953 60  0000 C CNN
-F 1 "CerePlex_M96" H 6825 5847 60  0000 C CNN
+F 1 "A79026-001" H 6825 5847 60  0000 C CNN
 F 2 "headstage adapter:omnetics_connector_36_pin" H 6825 3900 60  0001 C CNN
 F 3 "" H 6825 3900 60  0000 C CNN
 	1    6825 3900
@@ -60,8 +60,8 @@ L CONN_02X32 P1
 U 1 1 56F9721A
 P 5700 3000
 F 0 "P1" H 5700 4765 50  0000 C CNN
-F 1 "CONN_02X32" H 5700 4674 50  0000 C CNN
-F 2 "headstage adapter:Molex SlimStack 64 0.4mm pitch" H 5700 2600 50  0001 C CNN
+F 1 "502426-6410" H 5700 4674 50  0000 C CNN
+F 2 "headstage adapter:Molex_SlimStack_receptacle_64_0.4mm_pitch" H 5700 2600 50  0001 C CNN
 F 3 "" H 5700 2600 50  0000 C CNN
 	1    5700 3000
 	1    0    0    -1  
@@ -199,7 +199,7 @@ L CerePlex_M96 U2
 U 1 1 56F99112
 P 7850 3900
 F 0 "U2" H 7850 5953 60  0000 C CNN
-F 1 "CerePlex_M96" H 7850 5847 60  0000 C CNN
+F 1 "A79026-001" H 7850 5847 60  0000 C CNN
 F 2 "headstage adapter:omnetics_connector_36_pin" H 7850 3900 60  0001 C CNN
 F 3 "" H 7850 3900 60  0000 C CNN
 	1    7850 3900
@@ -334,21 +334,21 @@ Text Label 5950 2850 0    60   ~ 0
 Text Label 5950 2950 0    60   ~ 0
 63
 Text Label 7500 3800 2    60   ~ 0
-G
+R
 Text Label 8200 3800 0    60   ~ 0
-R
+G
 Text Label 8200 2100 0    60   ~ 0
-G
+R
 Text Label 7500 2100 2    60   ~ 0
-R
+G
 Text Label 7175 2100 0    60   ~ 0
-G
+R
 Text Label 6475 2100 2    60   ~ 0
-R
-Text Label 7175 3800 0    60   ~ 0
-R
-Text Label 6475 3800 2    60   ~ 0
 G
+Text Label 7175 3800 0    60   ~ 0
+G
+Text Label 6475 3800 2    60   ~ 0
+R
 Text Label 7325 1375 2    60   ~ 0
 G
 Text Label 7325 1475 2    60   ~ 0
@@ -358,7 +358,7 @@ L CONN_01X02 P2
 U 1 1 56F99751
 P 7525 1425
 F 0 "P2" H 7602 1463 50  0000 L CNN
-F 1 "CONN_01X02" H 7602 1372 50  0000 L CNN
+F 1 "1725656" H 7602 1372 50  0000 L CNN
 F 2 "Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_2pol" H 7525 1425 50  0001 C CNN
 F 3 "" H 7525 1425 50  0000 C CNN
 	1    7525 1425
@@ -384,7 +384,7 @@ L CerePlex_M96 U3
 U 1 1 56F9BD25
 P 8950 3900
 F 0 "U3" H 8950 5953 60  0000 C CNN
-F 1 "CerePlex_M96" H 8950 5847 60  0000 C CNN
+F 1 "A79026-001" H 8950 5847 60  0000 C CNN
 F 2 "headstage adapter:omnetics_connector_36_pin" H 8950 3900 60  0001 C CNN
 F 3 "" H 8950 3900 60  0000 C CNN
 	1    8950 3900
